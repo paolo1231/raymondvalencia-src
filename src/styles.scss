@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+/* --- Define Sass variables for Bootstrap theming --- */
+$primary: #464866;
+$secondary: #25274D;
+$info: #2E9CCA;
+$body-color: #AAABB8;
+$body-bg: #fff;
+
+/* Import Bootstrap with overridden colors */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+/* --- Define CSS variables for custom styles --- */
+:root {
+  --color-primary-dark: #25274D;
+  --color-primary-mid: #464866;
+  --color-light-gray: #AAABB8;
+  --color-accent-light: #2E9CCA;
+  --color-accent-dark: #29648A;
+  --color-accent-soft: #6CA0B6;
+  --color-bg: #fff;
+  --color-text-primary: var(--color-primary-dark);
+  --color-text-secondary: var(--color-primary-mid);
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 4px rgba(46, 156, 202, 0.6));
+}
+
+@media (max-width: 576px) {
+  .navbar-brand span {
+    display: none;
+  }
+}
+
+
+/* --- Global styles --- */
+body {
+  margin: 0;
+  font-family: Consolas, 'Courier New', monospace;
+  background-color: #25274D;
+  background-image: url('/assets/circuit-bg.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(37, 39, 77, 0.8) url('assets/circuit-overlay.svg') center center / cover no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+

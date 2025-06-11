@@ -1,0 +1,30 @@
+<div class="experience-container container py-5">
+  <h2 class="text-white mb-3">Work Experience</h2>
+  <p class="text-white mb-4">A snapshot of my professional journey—from small businesses to industry leaders—highlighting the roles, skills, and technologies I've worked with along the way.</p>
+
+  <div class="row">
+    <!-- Left side: Company List -->
+    <div class="col-md-4 mb-3">
+      <ul class="list-group">
+        <li
+          *ngFor="let company of companies"
+          class="list-group-item list-group-item-action"
+          [class.active]="selectedCompany.name === company.name"
+          (click)="selectCompany(company)"
+        >
+          {{ company.name }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right side: Company Details -->
+    <div class="col-md-8 position-relative">
+      <div *ngIf="selectedCompany" class="text-white bg-dark p-4 rounded shadow">
+        <h4>{{ selectedCompany.name }}</h4>
+        <p><strong>Role:</strong> {{ selectedCompany.role }}</p>
+        <p><strong>Duration:</strong> {{ selectedCompany.duration }}</p>
+        <div [innerHTML]="selectedCompany.description"></div>
+      </div>
+    </div>
+  </div>
+</div>

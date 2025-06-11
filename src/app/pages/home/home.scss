@@ -1,0 +1,53 @@
+.home {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--color-bg);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -2;
+  }
+
+  .photo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px var(--color-accent-light);
+    border: 3px solid var(--color-accent-dark);
+  }
+
+  .bio {
+    margin: 1rem auto;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: var(--color-bg);
+  }
+
+  .cta-buttons .btn {
+    margin: 0.5rem;
+  }
+
+  .tech-stack i {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--color-accent-light);
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: var(--color-light-gray);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-accent-light);
+    }
+  }
+}

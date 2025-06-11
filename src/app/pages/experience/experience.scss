@@ -1,0 +1,49 @@
+.experience-container {
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--color-bg);
+  margin-bottom: 3rem; /* space before footer */
+
+  .list-group {
+    cursor: pointer;
+
+    .list-group-item {
+      background-color: var(--color-primary-mid);
+      color: var(--color-bg);
+      border: none;
+      transition: background-color 0.3s, color 0.3s;
+
+      &.active {
+        background-color: var(--color-accent-soft);
+        color: white;
+        font-weight: 600;
+      }
+
+      &:hover:not(.active) {
+        background-color: var(--color-accent-dark);
+        color: white;
+      }
+    }
+  }
+
+  .section-title {
+    font-size: 2rem;
+    color: var(--color-accent);
+  }
+
+  .section-description {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h4 {
+    margin-bottom: 0.75rem;
+    color: var(--color-accent-soft);
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    color: var(--color-bg);
+  }
+}

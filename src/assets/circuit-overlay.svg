@@ -1,0 +1,13 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <g stroke="#2E9CCA" stroke-width="1.5" fill="none">
+    <path d="M0 200 L400 200 Q450 200 450 250 L450 400" stroke-dasharray="10 10">
+      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M300 0 L300 300 Q300 350 350 350 L700 350" stroke-dasharray="10 10">
+      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M1000 1000 L1000 800 Q1000 750 950 750 L700 750" stroke-dasharray="10 10">
+      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+</svg>

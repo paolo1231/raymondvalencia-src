@@ -1,0 +1,77 @@
+// src/app/app.component.scss
+nav.navbar {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #212529;
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #fff;
+
+    &:hover {
+      color: #0d6efd;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .nav-link {
+    color: #ccc;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+
+    &.active,
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.container {
+  padding-top: 2rem;
+}
+
+.footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+
+  .footer-link {
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-accent-light);
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+main {
+  min-height: calc(100vh - 100px); // adjust based on your header + footer
+  overflow: hidden;
+  position: relative;
+}
+
+
+

@@ -1,0 +1,35 @@
+.projects {
+  h2 {
+    color: #2e9cca;
+  }
+
+  .project-card {
+    background-color: #25274d;
+    border-radius: 0.75rem;
+
+    img {
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .custom-pill {
+      background-color: #464866;
+      color: #ffffff;
+      border-radius: 2rem;
+      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+    }
+
+    .btn-outline-info {
+      border-color: #2e9cca;
+      color: #2e9cca;
+
+      &:hover {
+        background-color: #2e9cca;
+        color: #fff;
+      }
+    }
+  }
+}
