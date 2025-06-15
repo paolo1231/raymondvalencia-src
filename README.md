@@ -54,7 +54,7 @@ This is my personal developer portfolio built using **Angular 20**, showcasing m
 
 ## 🔗 Live Demo
 
-_(Add link if deployed)_
+[https://paolo1231.github.io/](https://paolo1231.github.io/)
 
 ## 📫 Contact
 
