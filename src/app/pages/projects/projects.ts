@@ -10,13 +10,6 @@ import { Component } from '@angular/core';
 export class Projects {
   projects = [
     {
-      title: 'Bakasyonista',
-      description: 'A travel website with online booking and CMS.',
-      image: 'assets/project-1.png',
-      link: 'https://www.facebook.com/bakasyonista.com.ph',
-      techStack: ['Laravel', 'Bootstrap', 'MySQL', 'JQuery']
-    },
-    {
       title: 'Customizable Menu App',
       description: 'A full-stack web application that lets restaurant owners create, manage, and display a dynamic menu with categories, items, prices, and a configurable default currency.',
       image: 'assets/project-2.png',
@@ -24,11 +17,32 @@ export class Projects {
       techStack: ['Next.js', 'Node.js', 'Express', 'TailwindCSS', 'PostgreSQL']
     },
     {
-      title: 'Task Tracker API',
-      description: 'A backend REST API for managing tasks with JWT auth.',
-      image: 'assets/images/task-api.png',
-      link: 'https://github.com/yourname/task-api',
-      techStack: ['Node.js', 'Express', 'PostgreSQL', 'JWT']
+      title: 'paolo1231.github.io',
+      description: 'This is my personal developer portfolio built using Angular 20, showcasing my background as a full stack developer with a focus on backend development. The website features animated transitions, a custom circuit board background, and responsive design consistent with a tech-inspired theme.',
+      image: 'assets/project-3.png',
+      link: 'https://github.com/paolo1231/raymondvalencia-src',
+      techStack: ['Angular', 'Bootstrap', 'SCSS']
+    },
+    {
+      title: 'Bakasyonista',
+      description: 'A travel website with online booking and CMS.',
+      image: 'assets/project-1.png',
+      link: 'https://www.facebook.com/bakasyonista.com.ph',
+      techStack: ['Laravel', 'Bootstrap', 'MySQL', 'JQuery']
+    },
+    {
+      title: 'Orion Chinese Restaurant',
+      description: 'A local Chinese restaurant in Dawson Creek, BC',
+      image: 'assets/project-4.png',
+      link: 'https://orionrestaurant.ca/',
+      techStack: ['Squarespace']
+    },
+    {
+      title: 'Sam\'s Friends Restaurant',
+      description: 'A local all-day breakfast restaurant in Dawson Creek, BC',
+      image: 'assets/project-5.png',
+      link: 'https://www.samsfriendsrestaurant.com/',
+      techStack: ['Squarespace']
     }
   ];
 }
