@@ -50,6 +50,13 @@ export class Projects {
       image: 'assets/project-5.png',
       link: 'https://www.samsfriendsrestaurant.com/',
       techStack: ['Squarespace']
+    },
+    {
+      title: 'Chef Trio\'s Kitchen',
+      description: 'A local all-day breakfast restaurant in Dawson Creek, BC',
+      image: 'assets/project-chef-trio.png',
+      link: 'https://www.cheftriokitchen.ca/',
+      techStack: ['Squarespace']
     }
   ];
 }
