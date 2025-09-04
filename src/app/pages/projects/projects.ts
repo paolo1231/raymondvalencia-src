@@ -10,6 +10,13 @@ import { Component } from '@angular/core';
 export class Projects {
   projects = [
     {
+      "title": "API Documentation Generator",
+      "description": "A full-stack web application that generates clean, interactive API documentation from Java code comments (Javadoc) or OpenAPI/Swagger files with search functionality and responsive design.",
+      "image": "assets/project-6.png",
+      "link": "https://github.com/paolo1231/APIGen",
+      "techStack": ["React", "Spring Boot", "TailwindCSS", "Java", "Maven"]
+    },
+    {
       title: 'Customizable Menu App',
       description: 'A full-stack web application that lets restaurant owners create, manage, and display a dynamic menu with categories, items, prices, and a configurable default currency.',
       image: 'assets/project-2.png',
