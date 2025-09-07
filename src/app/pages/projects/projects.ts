@@ -11,9 +11,9 @@ export class Projects {
   projects = [
     {
       title: 'Whitespace - AI Code Reviewer',
-      description: 'RESTful API service that leverages OpenAI GPT-4 to provide intelligent code review and optimization suggestions',
+      description: '🤖 AI code review microservice - Submit code, get instant feedback powered by GPT-4',
       image: 'assets/project-whitespace.png',
-      link: 'https://github.com/paolo1231/Whitespace',
+      link: 'https://whitespace-47eef2b2e700.herokuapp.com/',
       techStack: ['Quarkus', 'Java 17', 'OpenAI API', 'LangChain4j', 'Docker']
     },
     {
@@ -22,6 +22,13 @@ export class Projects {
       "image": "assets/project-6.png",
       "link": "https://github.com/paolo1231/APIGen",
       "techStack": ["React", "Spring Boot", "TailwindCSS", "Java", "Maven"]
+    },
+    {
+      title: 'BinThere - Smart Inventory Manager',
+      description: '📦 React Native inventory management app with premium subscriptions, smart categorization, and cross-platform support',
+      image: 'assets/project-binthere.png',
+      link: 'https://github.com/paolo1231/BinThere',
+      techStack: ['React Native', 'TypeScript', 'React Native IAP', 'AsyncStorage', 'React Context API', 'iOS/Android']
     },
     {
       title: 'Customizable Menu App',
