@@ -10,6 +10,13 @@ import { Component } from '@angular/core';
 export class Projects {
   projects = [
     {
+      title: 'Whitespace - AI Code Reviewer',
+      description: 'RESTful API service that leverages OpenAI GPT-4 to provide intelligent code review and optimization suggestions',
+      image: 'assets/project-whitespace.png',
+      link: 'https://github.com/paolo1231/Whitespace',
+      techStack: ['Quarkus', 'Java 17', 'OpenAI API', 'LangChain4j', 'Docker']
+    },
+    {
       "title": "API Documentation Generator",
       "description": "A full-stack web application that generates clean, interactive API documentation from Java code comments (Javadoc) or OpenAPI/Swagger files with search functionality and responsive design.",
       "image": "assets/project-6.png",
