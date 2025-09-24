@@ -4,34 +4,45 @@ nav.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #212529;
+  background-color: rgba(16, 33, 62, 0.85) !important;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(16, 33, 62, 0.95) !important;
+  }
 
   .navbar-brand {
     font-weight: bold;
     font-size: 1.25rem;
     color: #fff;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
 
     &:hover {
-      color: #0d6efd;
+      color: #64ffda;
+      text-shadow: 0 0 15px rgba(100, 255, 218, 0.6);
     }
   }
 
   .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(100, 255, 218, 0.3);
   }
 
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28100, 255, 218, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   .nav-link {
-    color: #ccc;
+    color: rgba(255, 255, 255, 0.8);
     margin-left: 1rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
     &.active,
     &:hover {
-      color: #fff;
+      color: #64ffda;
+      text-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
     }
   }
 }
@@ -41,29 +52,44 @@ nav.navbar {
 }
 
 .footer {
-  background-color: var(--color-primary-dark);
-  color: var(--color-light-gray);
+  background-color: rgba(16, 33, 62, 0.85);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(100, 255, 218, 0.1);
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(16, 33, 62, 0.95);
+  }
 
   .footer-link {
-    color: var(--color-bg);
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
     margin: 0 0.5rem;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
     &:hover {
-      color: var(--color-accent-light);
+      color: #64ffda;
+      text-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
+      transform: translateY(-1px);
     }
 
     i {
       font-size: 1.2rem;
     }
+  }
+
+  small {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -71,7 +97,10 @@ main {
   min-height: calc(100vh - 100px); // adjust based on your header + footer
   overflow: hidden;
   position: relative;
+  background: transparent; // Let the Three.js background show through
 }
+
+// Remove duplicate navbar styles - handled above
 
 
 

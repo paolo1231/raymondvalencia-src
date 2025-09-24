@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { slideInAnimation } from './route-animations';
+import { ThreeBackgroundComponent } from './components/three-background/three-background.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, ThreeBackgroundComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   animations: [slideInAnimation]
